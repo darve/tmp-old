@@ -1,0 +1,2 @@
+[30-Sep-2018 20:54:01 Europe/London] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/tmpmortg/public_html/wp-admin/includes/class-wp-filesystem-ssh2.php on line 36
+[30-Sep-2018 20:54:30 Europe/London] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/tmpmortg/public_html/wp-admin/includes/class-wp-filesystem-ssh2.php on line 36

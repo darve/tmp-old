@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
+body.apply-now{
+    /*overflow: hidden;*/
+}
+.form-fields:after,.form-fields .form-field:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+#mortgage-apply-form{
+    margin: 100px 0 20px 0;
+    padding: 0 0 250px 0;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+#mortgage-apply-form .stage {
+    padding: 20px 0px 40px 0px;
+}
+#mortgage-apply-form .stage[data-id="1"]{
+}
+#mortgage-apply-form .stage[data-id="1"] img{
+    width: 100%;
+    height:431px;
+    position: absolute;
+    left: 0;
+    right: 15px;
+    bottom: -40px;
+}
+#mortgage-apply-form .stage div[class*="col-md-"]{
+    height: 630px;
+}
+#mortgage-apply-form .stage div[class*="col-md-12"]{
+    height:auto !important;
+}
+#mortgage-apply-form .stage .page-title{
+    font-size: 138px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0px 0px 20px 0px;
+}
+#mortgage-apply-form .stage p {
+    line-height: 1.5;
+    color: #383838;
+}
+#mortgage-apply-form .stage:nth-child(2n+2){
+    background-color: #F8F8F8;
+}
+.morg select {
+    width: 100%;
+    height: 25px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px !important;
+    -webkit-appearance: none;
+    padding: 0px 5px;
+    outline: none;
+    background: transparent;
+    margin: 11px 0px 0px 0px;
+}
+
+.form-type {
+    margin: 0px 0px;
+}
+.form-type:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.form-type > span {
+    display:inline-block;
+    margin: 0px 20px 0px 0px;
+    height:40px;
+    line-height: 40px;
+    color: #383838;
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+}
+.dropdown{
+    position: relative;
+    display:inline-block;
+    width: 300px;
+    z-index:98;
+    height: 40px;
+}
+.dropdown:hover,
+.dropdown.hover{
+    z-index: 1000000 !important;
+}
+.dropdown span{
+    background-color: #F3F3F3;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    border: 0px !important;
+    height: 40px;
+}
+.dropdown span span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+}
+/*.dropdown span:hover ul{
+	display:block
+}*/
+.dropdown input {
+    width:100%;
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 8px;
+    bottom: 0;
+}
+.dropdown span ul{
+    padding: 0px;
+    list-style: none;
+    margin: 0px 0px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 30px;
+    display:none;
+    height: 200px;
+    overflow: scroll;
+    width: 200px;
+    -ms-overflow-style: none;
+    z-index: 1000000;
+}
+.dropdown span ul li{
+    padding: 15px 20px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #f3f3f3;
+    cursor: pointer;
+    color: #111;
+}
+.dropdown span ul li:hover{
+    background: #e8e8e8 !important;
+}
+.applicant_page{
+    display:none;
+    padding:40px 0px;
+}
+
+.morg .slide{
+    width: 80px;
+    height: 26px;
+    background: #c1c1c1;
+    position: relative;
+    border-radius: 50px;
+    /* box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2); */
+    margin: 19px auto 10px auto;
+    display: inline-block;
+}
+.morg .slide input[type=checkbox] {
+    visibility: hidden;
+}
+.morg .slide label {
+    display: block;
+    width: 34px !important;
+    height: 20px !important;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    background: #fcfff4;
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.morg .slide input[type=checkbox]:checked + label {
+    left: 43px;
+}
+.morg .slide:before {
+    content: 'Yes';
+    color: #27ae60;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+}
+.morg .slide:after {
+    content: 'No';
+    color: #000;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15); */
+}
+.morg .slider{
+    margin: 20px 0px;
+    text-align: center;
+}
+.morg .slider .labelText{
+
+}
+
+#mortgage-apply-form .stage[data-id="2"] {
+}
+#mortgage-apply-form .stage h2 {
+    text-align: center;
+    font-weight: bold;
+    color:#999999;
+    font-size:70px;
+    margin: 20px 0px 40px 0px;
+    font-weight: 400;
+}
+li.feed-item.juicer.image-post {
+    display: none !important;
+}
+
+.form-fields{text-align: center;height: 40px;}
+.form-fields .form-field{
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 30px 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.form-fields .form-field.title{
+}
+.form-fields .form-field.forename{
+}
+.form-fields .form-field.surname{
+}
+.form-fields .form-field.other-names{
+}
+.form-fields .form-field.dob{
+}
+.form-fields .form-field.dob .dropdown{
+    width:60px;
+}
+.form-fields .form-field .dropdown{
+    width: 100px;
+    margin: 0px 10px 0px 0px;
+    background-color: transparent;
+    border:0px;
+    font-size:15px;
+    font-weight:normal;
+    float: left;
+}
+.form-fields .form-field .dropdown > span{
+    background-color: transparent;
+}
+.form-fields .form-field .dropdown > span > span{
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    height: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.form-fields .form-field .dropdown > span > ul > li{
+    padding:0px 20px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #f3f3f3;
+    cursor: pointer;
+    color: #111;
+    height:40px;
+    line-height:40px;
+    width: 200px;
+}
+.form-fields .form-field label{
+    color:#111111;
+    font-weight: normal;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0px 5px 0px 0px;
+    height:40px;
+    line-height: 45px;
+    float: left;
+    position: relative;
+}
+.form-fields .form-field input{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 1px solid #CCCCCC;
+    outline: 0;
+    height: 25px;
+    line-height: 30px;
+    font-size:15px;
+    font-weight:normal;
+    margin: 11px 0px 0px 0px;
+    padding: 0px 5px;
+}
+.house_and_street {width:800px;}
+.house_and_street input {width: 600px;}
+.city {}
+.city input {}
+
+.adverse_credit {}
+.basic_salary {}
+.overtime {}
+.state_benefits {}
+
+.housing_association{}
+.housing_association input{}
+.site_development{}
+.site_development input{}
+.property_address_line_1{}
+.property_address_line_1 input{}
+.property_address_line_2{}
+.property_address_line_2 input{}
+.property_address_line_3{}
+.property_address_line_3 input{}
+.property_postcode{}
+.property_postcode input{}
+
+.dob .dropdown ul {
+    width: 60px;
+}
+
+.application_type .dropdown ul li,
+.self_employed .dropdown ul li,
+.adverse_credit .dropdown ul li,
+.housing_association .dropdown ul li,
+.site_development .dropdown ul li,
+.nationality .dropdown ul li,
+.marital_status .dropdown ul li,
+.gender .dropdown ul li,
+.leave_to_uk .dropdown ul li,
+.smoker .dropdown ul li,
+.work_started .dropdown ul li,
+.moved .dropdown ul li,
+.dob .dropdown ul li {
+    width: 100% !important;
+    text-align: center;
+    padding: 0px 0px !important;
+    font-size: 13px;
+}
+
+.application_type.dropdown ul{
+    width: 300px;
+    margin: 0px 0px 0px;
+    right: -0px;
+    top: 40px;
+}
+.nationality .dropdown ul,
+.marital_status .dropdown ul,
+.housing_association .dropdown ul,
+.site_development .dropdown ul,
+.self_employed .dropdown ul,
+.adverse_credit .dropdown ul,
+.marital_status .dropdown ul,
+.gender .dropdown ul,
+.leave_to_uk .dropdown ul,
+.smoker .dropdown ul,
+.work_started .dropdown ul,
+.moved .dropdown ul {
+    width: 200px;
+    margin: 0px 0px 0px;
+    right: -50px;
+}
+
+.form-type p {
+    text-align: center;
+}
+.form-type textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background: #fff;
+    resize: none;
+    height: 150px;
+    padding: 10px 20px;
+}
+.form-type button {
+    display: block;
+    margin: 0 AUTO;
+    background: #91d200;
+    color: #FFF;
+    padding: 10px 30px;
+    border: 1px solid #91d200;
+}
+.form-type button:hover{
+    background: transparent;
+    color: #91d200;
+}
+.applicant_two, .thankyou{display: none;}
+.stage, .applicant_one{
+    display: none;
+}
+.stage[data-id="1"]{
+    display: block;
+}
+.required_home{
+    display: none;
+}
+.dropdown input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border-bottom: 1px solid #ccc !important;
+    border: 0px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+label:hover .motivo-tooltip{display: block;}
+span.motivo-tooltip { z-index: 999;width: 300px;display: none;line-height: 1.5;position: absolute;top: 40px;padding: 10px;color: #FFF;background: #111;left: -50px;}
+span.motivo-tooltip:before {content: '';border-style: solid;border-color: rgba(17, 17, 17, 0) rgba(17, 17, 17, 0) #111 rgba(17, 17, 17, 0);border-width: 10px 10px 10px 10px;position: absolute;top: -20px;left: calc(46%);}
+
+
+@media screen and (min-width:0px) and (max-width:800px){
+    #mortgage-apply-form .stage h2 {font-size: 24px;}
+    #mortgage-apply-form .stage .page-title {font-size: 90px;text-align: center;display: block;}
+    #mortgage-apply-form .stage .col-md-5 {/* float: right; */display: block;}
+    .form-fields .form-field label {display: block;margin: 0px 0px 10px 0px;float: none;}
+    .form-fields .form-field {display: block;width: 100%;padding: 0px 0px 0px 0px;margin: 0px 0px 20px 0px;}
+    .form-fields .form-field input {width: 100%;}
+    .form-fields .form-field .dropdown {width: 100% !important;height: auto !important;}
+    .dropdown span:hover ul {left: 0;width: 100%;right: 0;}
+    .form-field.moved .dropdown, .form-field.work_started .dropdown {width: 28.33%;}
+    #mortgage-apply-form .stage div[class*="col-md-"] {height: auto;}
+    #mortgage-apply-form .stage[data-id="1"] img {height: auto;position: relative;top: 0;left: 0;right: 0;display:none;}
+    #mortgage-apply-form {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
+    .form-fields {height: auto !important;}
+    .dropdown {float: none;}
+    .morg select {height: 40px !important;line-height: 40px;margin: 0px 0px;}
+}
+
+.motivo-proceed{
+    background: #91d200;
+    height: 40px;
+    padding: 0px 30px;
+    display: inline-block;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 16px;
+}
+.motivo-proceed:hover{
+    background: #111;
+    color:#FFFFFF;
+    text-decoration: NONE;
+}
+ul::-webkit-scrollbar {
+    display: none;
+}
+.disclamer label[for="existing"],
+.disclamer label[for="disclamer"] {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+.disclamer label[for="existing"] input,
+.disclamer label[for="disclamer"] input {
+    margin: 0px 10px 0px 0px;
+}
+
+.existing{
+    display:none;
+}
+
+.disclamer p {
+    font-style: italic;
+}
+.stage[data-id="1"] .form-type{
+    display: none;
+}
+
+.diologe-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    z-index: 1000;
+}
+.diologe-wrapper .diologe-container {
+    width: 400px;
+    margin: 12% auto;
+    padding: 30px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0px 0px 30px -10px #000;
+}
+.diologe-wrapper .diologe-container h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin: 0px 0px;
+}
+.diologe-wrapper .diologe-container h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.diologe-wrapper .diologe-container .loader,
+.diologe-wrapper .diologe-container .loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.diologe-wrapper .diologe-container .loader {
+    margin: 40px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(170, 220, 59, .2);
+    border-right: 1.1em solid rgba(170, 220, 59, .2);
+    border-bottom: 1.1em solid rgba(170, 220, 59, .2);
+    border-left: 1.1em solid #aadc3b;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.applicant_page.stage div[class*="col-md-"]{
+    height:auto !important;
+}
